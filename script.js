@@ -29,6 +29,32 @@ console.log (convertDaysToAge (6570));
 // getLargestNumber(2 ,1, 4); // returns 4
 // getLargestNumber(6,2,3); // returns 6
 
+const getLargestNumber = (firstNumber, secondNumber, thirdNumber) => {
+    let largestNumber;
+    if (firstNumber > secondNumber) {
+        if (firstNumber >= thirdNumber) {
+            return largestNumber = firstNumber;
+        } else if (firstNumber < thirdNumber) {
+            return largestNumber =thirdNumber;
+    }
+    } else if (secondNumber > firstNumber) {
+        if (secondNumber >= thirdNumber) {
+            return largestNumber = secondNumber;
+        } else if (secondNumber < thirdNumber) {
+            return largestNumber = thirdNumber;
+        }
+    } else if (thirdNumber > firstNumber) {
+        if (thirdNumber >= secondNumber) {
+            return largestNumber = thirdNumber;
+        } else if (thirdNumber < secondNumber) {
+            return largestNumber = secondNumber;
+        }   
+    }
+}
+
+console.log (getLargestNumber(2,1,4));
+console.log (getLargestNumber(6,2,3));
+
 // Write a function that takes an array of names and returns the last name from the array of names.
 // getLastName([”Charlie”, “Rob”, “Andy”]); // returns “Andy”
 // getLastName(["Ash","Stu"]); // returns "Stu"

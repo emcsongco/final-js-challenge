@@ -17,7 +17,13 @@ const isNumberPositive = (inputNumber) => {
 // convertDaysToAge(3650); // returns 10
 // convertDaysToAge(6570); // returns 18
 
-const convertDaysToAge(inputNumberOfDays)
+const convertDaysToAge = (inputNumberOfDays) => {
+    let equivalentAge;
+    return equivalentAge = inputNumberOfDays / 365;
+}
+
+console.log (convertDaysToAge (3650));
+console.log (convertDaysToAge (6570));
 
 // Write a function that takes three numbers and returns the largest of the three numbers.
 // getLargestNumber(2 ,1, 4); // returns 4

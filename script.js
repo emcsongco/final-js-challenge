@@ -2,12 +2,12 @@
 // isNumberPositive(-1); // returns false
 // isNumberPositive(10); // returns true
 
-const isNumberPositive = (input) => {
-    let positiveCheck;
-    if (input >= 0) {
-        return positiveCheck = true;
+const isNumberPositive = (inputNumber) => {
+    let positiveNumberCheck;
+    if (inputNumber >= 0) {
+        return positiveNumberCheck = true;
     } else {
-        return positiveCheck = false;
+        return positiveNumberCheck = false;
         }
 }
  console.log (isNumberPositive(-1));
@@ -16,6 +16,8 @@ const isNumberPositive = (input) => {
 // Write a function that takes a number of days and converts it into an age.
 // convertDaysToAge(3650); // returns 10
 // convertDaysToAge(6570); // returns 18
+
+const convertDaysToAge(inputNumberOfDays)
 
 // Write a function that takes three numbers and returns the largest of the three numbers.
 // getLargestNumber(2 ,1, 4); // returns 4
